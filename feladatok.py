@@ -40,7 +40,7 @@ def harmadik():
     
     print(f"A(z) {a} egy öttel osztható szám")
 
-def negyedik(a):
+def negyedik():
     a: float = float(input("Kérek egy számot: "))
     if a % 1 != 0 or a == 0:
         while a % 1 != 0 or a == 0:
