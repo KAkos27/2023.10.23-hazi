@@ -39,24 +39,11 @@ def harmadik():
             a: int = int(input("Kérek egy 5-tel osztható számot: "))
     
     print(f"A(z) {a} egy öttel osztható szám")
+    
 
 def negyedik():
     a: float = float(input("Kérek egy számot: "))
-    if a % 1 != 0 or a == 0:
-        while a % 1 != 0 or a == 0:
-            print("Törtet vagy 0-át nem adhatsz meg!")
-            a: float = float(input("Kérek egy számot: "))
-
-    if a > 0:
-        i = 1
-        while i <= a:
-            logikai(i,a)
-            i+=1
-    elif a < 0:
-        b = -1
-        while b >= a:
-            logikai(b,a)
-            b-=1
+    negyedikteszt(a)
 
 def logikai(i,a):
     if i % 3 == 0 and i % 2 == 0:
